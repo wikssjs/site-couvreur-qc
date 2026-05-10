@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Disallow: /soumission-couvreur/
+
+Sitemap: https://prix-couvreur.ca/sitemap-index.xml
