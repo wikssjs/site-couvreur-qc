@@ -305,8 +305,8 @@
 </div>
 <!-- Spacer pour sticky bar mobile -->
 <div class="sm:hidden" style="height:88px"></div>
-<section class=" py-12 bg-white border-b border-slate-100">
-  <div class="max-w-4xl mx-auto px-4 sm:px-6">
+<section class=" py-16 sm:py-20 bg-white border-b border-slate-100">
+  <div class="max-w-6xl mx-auto px-4 sm:px-6">
     <div class="cv-city-intro">
       <h2>Les toitures qui résistent aux hivers de Saint-Donat</h2>
 <p>À Saint-Donat comme ailleurs en Lanaudière, les toitures doivent affronter des hivers rigoureux, des cycles gel-dégel intenses et des accumulations de neige importantes. C'est pourquoi les bardeaux d'asphalte restent le choix dominant dans le secteur, avec les marques IKO et BP bien établies localement. Pour les maisons plus anciennes, construites entre 1960 et 1990, les bardeaux de cèdre offrent une élégance naturelle et une isolation réelle, avec une durée de vie impressionnante de 30 à 50 ans. Mais c'est surtout la tôle ondulée et les toitures métalliques à joints debout qui gagnent du terrain à Saint-Donat, grâce à leur excellente résistance au vent et à la neige. Sur les toits plats, les membranes élastomères offrent une protection fiable contre les infiltrations. Chaque matériau a ses avantages face aux conditions que notre région impose.</p>
@@ -810,24 +810,6 @@ if (_form) {
       _updateDots(_totalSteps + 1);
       if (typeof gtag !== 'undefined') {
         gtag('event', 'lead_qualifie', {event_category: 'lead', event_label: 'Saint-Donat', event_value: 1});
-      }
-    }).catch(function() { _form.submit(); });
-  });
-}
-
-/* Masquer sticky bar au scroll vers le formulaire */
-var _stickyBar = document.getElementById('sticky-bar');
-if (_stickyBar) {
-  var _formEl = document.getElementById('formulaire');
-  window.addEventListener('scroll', function() {
-    if (_formEl) {
-      var rect = _formEl.getBoundingClientRect();
-      _stickyBar.style.display = (rect.top < window.innerHeight && rect.bottom > 0) ? 'none' : '';
-    }
-  }, {passive: true});
-}
-</script></body>
-</html>'lead', event_label: 'Saint-Donat', event_value: 1});
       }
     }).catch(function() { _form.submit(); });
   });
